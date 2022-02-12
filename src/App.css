@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background: linear-gradient( #f59393, #cee2e7); */
+  background: url('./old-trafford-stadium.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1000vh;
+  
+}
+.user {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.matches {
+  /* border: solid 1px red; */
+  
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  border: solid;
+  border-radius: 60px;
+  margin-top: 8px;
+  text-align: center;
+  background: linear-gradient( rgb(148, 127, 223), rgb(238, 238, 221));
+}
+img {
+  padding-top: 15px
+}
+.intro {  
+  text-align: center;
+}
+.lgSrch{
+  border: darkred solid 1px;
+  margin: 0 40%;
+  padding-bottom: 1.5pc;
+  background:linear-gradient(rgb(240, 223, 223) ,rgb(255, 251, 0));
+}
+#search {
+  padding: 5px;
+  border-radius: 15px;
+  /* margin-block-start: ; */
+}
