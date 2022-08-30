@@ -3,9 +3,6 @@ import {Card} from 'react-bootstrap';
 import axios from 'axios';
 ;
 
-
-
-
 export default function Match() {
     const [matches, matchesData ] = useState([])
     const [searchTerm, setSearchTerm ] = useState('')
@@ -15,7 +12,6 @@ export default function Match() {
         .then(res => matchesData(res.data.response))
         .catch(err=> console.error(err))
     },[])
-
     return (<div className='body'>
 
         <div className="intro">
@@ -37,13 +33,13 @@ export default function Match() {
             </div>
         
         <div id="top"></div>
-        <a href="#down">Down</a>
+        <a href="#down" className='arrows down'>Down👇</a>
 
         <div className="matches">
             {matches && matches.filter( val => {
         if (searchTerm === '') {
             return val
-        } else if (val.competition.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())) {
+        }  if (val.competition.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())) {
             return val
         }
     }).map(ftbl => {
@@ -73,6 +69,6 @@ export default function Match() {
             })}
             <div id="down"></div>
         </div>
-            <a href="#top">top</a>
+            <a href="#top" className='arrows top'>top👆</a>
     </div>)
 }
