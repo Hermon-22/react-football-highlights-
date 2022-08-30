@@ -26,6 +26,7 @@ export default function Match() {
         id="search"  
         placeholder='search...' 
         onChange={evnt=> { setSearchTerm(evnt.target.value)}}
+        
         />
         <br />
     </div>
